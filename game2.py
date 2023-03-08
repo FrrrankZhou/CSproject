@@ -49,6 +49,7 @@ def down():  # 相当于转置后再右移
 
 
 def is_game_over() -> bool:  # 判断游戏是否结束
+	zeros: list
 	for i in range(side_length):
 		for c in range(side_length - 1):
 			# 判断是否还可以走
@@ -121,11 +122,10 @@ def move_zero_to_end(row: int):
 			field[row].append(0)
 
 
-def gen():
+def gen():  # 随机生成
 	zeros: list[tuple[int, int]]
 	pos: [int, int]
 	num: int
-	# 随机生成
 	zeros = refresh_empty()
 	num = 2 ** r.choice(pool)
 	pos = r.choice(zeros)
