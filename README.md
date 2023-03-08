@@ -1,7 +1,7 @@
 # CSproject
 this is Frank's 2048 game
 
-use wasd key to play
+use wasd button to play
 
 w refers to up
 
