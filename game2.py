@@ -125,9 +125,9 @@ def gen():
 	zeros: list[tuple[int, int]]
 	pos: [int, int]
 	num: int
-	# 随机生成2 or 4
+	# 随机生成
 	zeros = refresh_empty()
-	num = 2 * r.randint(1, 2)
+	num = 2 ** r.choice(pool)
 	pos = r.choice(zeros)
 	field[pos[0]][pos[1]] = num
 
