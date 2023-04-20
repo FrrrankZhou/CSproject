@@ -11,4 +11,8 @@ s refers to down
 
 d refers to right
 
+press r to reload this game
+
+press x to exit
+
 you can change some parameters in the file "customizable_data.json"
